@@ -1,0 +1,20 @@
+from gpiozero import Robot
+import time
+
+print('Testing Sandy Boy!')
+robo = Robot(right=(7,8), left=(20,21))
+print('Forward ^')
+robo.forward()
+time.sleep(3)
+print('backward V')
+robo.backward()
+time.sleep(3)
+print('Right ->')
+robo.right()
+time.sleep(3)
+print('Left <-')
+robo.left()
+time.sleep(3)
+robo.stop()
+robo.close()
+print('Success !!')
